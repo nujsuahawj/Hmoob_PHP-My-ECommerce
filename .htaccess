@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteRule ^index?$ index.php
+RewriteRule ^category?$ category.php
+
+#RENAME TWO
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}.php -f 
+#RewriteRule ^(.*)$ $1.php
+
+#NOFOT WHEN IS .php
+#RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+#RewriteRule .* - [L,R=404]
+
